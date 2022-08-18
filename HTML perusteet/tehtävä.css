@@ -1,0 +1,36 @@
+.keltainen
+{
+  font-weight: bolder;
+  color: #afa41d;
+}
+body
+{
+  width: 300px;
+  margin: auto;
+}
+body
+{
+  background-image: url(https://images.pexels.com/photos/2249961/pexels-photo-2249961.jpeg);
+}
+
+table, th, td
+{
+  border: 1px solid black;
+
+}
+tr:nth-child(even)
+{
+  background-color: #dad26c;
+}
+
+th
+{
+  background-color: #b99b1a;
+  color: black;
+}
+h1 {
+  text-shadow: 0 0 2px #FF0000;
+}
+h2 {
+  border-bottom: 6px solid #a08307;
+}
