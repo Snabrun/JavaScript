@@ -1,0 +1,37 @@
+#vasen
+{
+  float: left;
+  margin-right: 20px;
+}
+body
+{
+
+  margin: 10px 200px
+
+}
+body
+{
+  background-image: url(https://img.freepik.com/free-vector/neon-grid-background_53876-91657.jpg?w=1380&t=st=1661152570~exp=1661153170~hmac=cff391e55ba8bf7e87a7359b0c931b33216d8b69a75bd99d700dd193a45bb603);
+}
+h1
+{
+  margin-left: 700px
+}
+
+#oikea
+{
+  float: right;
+  margin-right: 20px
+}
+.first
+{
+  background-color: #6441A4;
+}
+
+h1 {
+  text-shadow: 0 0 2px #6441A4;
+}
+.two
+{
+  background-color: #6441A4;
+}
