@@ -3,6 +3,10 @@
   float: left;
   margin-right: 20px;
 }
+#vasen
+{
+    border: 3px solid powderblue;
+}
 body
 {
 
@@ -17,11 +21,18 @@ h1
 {
   margin-left: 700px
 }
-
+h1
+{
+  border-bottom: 3px dotted #6441A4
+}
 #oikea
 {
   float: right;
-  margin-right: 20px
+  margin-left: 20px
+}
+#oikea
+{
+    border: 3px solid powderblue;
 }
 .first
 {
@@ -29,9 +40,19 @@ h1
 }
 
 h1 {
-  text-shadow: 0 0 2px #6441A4;
+  text-shadow: 5px 5px 10px #6441A4, 0 0 5px #8102FE;
 }
 .two
 {
   background-color: #6441A4;
+}
+
+.blue
+{
+  background-color: #5B2761EB;
+}
+p
+{
+  border: 2px solid powderblue;
+  margin: auto;
 }
