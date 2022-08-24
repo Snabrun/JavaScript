@@ -1,0 +1,60 @@
+body
+{
+  width: 1800px;
+  margin: auto;
+  background-color: #333577
+}
+header, footer
+{
+  background-color: #7F82B2
+}
+header > h1
+{
+  background-color: #7F82B2;
+  padding: 5px 0px 10px 10px;
+  text-shadow: 5px 5px 10px #232457, 0 0 5px #5A5CB7;
+}
+nav
+{
+  width: 230px;
+  margin: auto;
+  background-color: #B7B9FF;
+}
+aside
+{
+  float: right;
+  background-color: #232457;
+}
+section
+{
+  background-color: #1A1C59;
+  width: 750px;
+}
+aside, section
+{
+  padding: 5px 0px 10px 10px;
+}
+aside
+{
+  height: 295px;
+  width: 190px;
+}
+aside > p
+{
+  padding: 5px 0px 10px 10px;
+
+}
+h3, p
+{
+  color: #B9B9C4
+}
+h2
+{
+  color: #B9B9C4
+}
+#oikea
+{
+  float: right;
+  margin-right: 245px;
+  border: 2px solid #B7B9FF;
+}
