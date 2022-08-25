@@ -1,8 +1,8 @@
 body
 {
-  width: 1800px;
+  width: 1070px;
   margin: auto;
-  background-color: #333577
+  background-image: url(dark-blue.jpg);
 }
 header, footer
 {
@@ -16,7 +16,7 @@ header > h1
 }
 nav
 {
-  width: 230px;
+  width: 240px;
   margin: auto;
   background-color: #B7B9FF;
 }
@@ -30,19 +30,19 @@ section
   background-color: #1A1C59;
   width: 750px;
 }
-aside, section
+section
 {
   padding: 5px 0px 10px 10px;
 }
 aside
 {
   height: 295px;
-  width: 190px;
+  width: 290px;
 }
+
 aside > p
 {
-  padding: 5px 0px 10px 10px;
-
+  padding: 10px;
 }
 h3, p
 {
@@ -55,6 +55,23 @@ h2
 #oikea
 {
   float: right;
-  margin-right: 245px;
+  margin-right: 60px;
+  margin-top: 294px;
   border: 2px solid #B7B9FF;
+}
+#Betty
+{
+  border: 2px solid #B7B9FF;
+}
+#Dior
+{
+  border: 2px solid #B7B9FF;
+}
+ul li
+{
+  color: #B9B9C4
+}
+table
+{
+  margin-left: auto;
 }
