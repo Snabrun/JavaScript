@@ -6,7 +6,7 @@ body
 }
 header, footer
 {
-  background-color: #7F82B2;
+  background-image: url(back.jpg);
 }
 header
 {
@@ -15,7 +15,6 @@ header
 }
 header > h1
 {
-  background-color: #7F82B2;
   padding: 5px 0px 10px 10px;
   text-shadow: 5px 5px 10px #232457, 0 0 5px #5A5CB7;
 }
