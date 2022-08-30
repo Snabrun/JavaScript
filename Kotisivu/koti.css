@@ -2,11 +2,16 @@ body
 {
   width: 1070px;
   margin: auto;
-  background-image: url(dark-blue.jpg);
+  background-image: url(blue.jpg);
 }
 header, footer
 {
-  background-color: #7F82B2
+  background-color: #7F82B2;
+}
+header
+{
+  border: 2px solid #B7B9FF;
+
 }
 header > h1
 {
@@ -24,11 +29,13 @@ aside
 {
   float: right;
   background-color: #232457;
+
 }
 section
 {
   background-color: #1A1C59;
   width: 750px;
+  border: 2px solid #B7B9FF;
 }
 section
 {
@@ -36,8 +43,9 @@ section
 }
 aside
 {
-  height: 295px;
+  height: 350px;
   width: 290px;
+  border: 2px solid #B7B9FF;
 }
 
 aside > p
@@ -56,7 +64,7 @@ h2
 {
   float: right;
   margin-right: 60px;
-  margin-top: 294px;
+  margin-top: 280px;
   border: 2px solid #B7B9FF;
 }
 #Betty
@@ -67,11 +75,15 @@ h2
 {
   border: 2px solid #B7B9FF;
 }
+#harrastukset
+{
+  border: 2px solid #B7B9FF;
+}
 ul li
 {
   color: #B9B9C4
 }
 table
 {
-  margin-left: auto;
+  margin-left: 100px;
 }
