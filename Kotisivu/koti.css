@@ -4,7 +4,7 @@ body
   margin: auto;
   background-image: url(blue.jpg);
 }
-header, footer
+header
 {
   background-image: url(back.jpg);
 }
