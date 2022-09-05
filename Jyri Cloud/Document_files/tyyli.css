@@ -1,0 +1,340 @@
+/*--------------------
+        Yleinen
+---------------------*/
+/* box-sizing: border-box sisällyttää margin ja padding -komennot
+laatikon sisään, eli laatikko ei kasva, vaikka em. komentoja käyttäisi,
+niinkuin tapahtuu, jos box-sizing komentoa ei käytä.
+Kts. https://www.w3schools.com/css/css3_box-sizing.asp */
+
+* {
+  box-sizing: border-box;
+}
+/* Merkkilajin määritys seuraavasti:
+- font-family tarkoittaa valittua merkkilajia
+- font-size fontin kokoa
+- line-heigth rivi väliä
+- em tarkoittaa suhteessa fontin kokoon
+Kts. lisää https://www.w3schools.com/cssref/css_units.asp */
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+/* Tehty koko bodyn kokoinen sisältö"laatikko", jonka id = container
+eli jos HTML5 komennot eivät riitä, div-komennolla saadaan tehtyä omia
+block-elementtejä
+Katso lisää: https://www.w3schools.com/tags/tag_div.ASP
+
+display:table -komennolla voidaan määritellä, että block-elementit
+käyttäytyvät kuin table
+Kts. https://www.w3schools.com/cssref/pr_class_display.asp
+
+Leveyden voi myös määrittää suhteellisesti, eli prosenteina, jolloin leveys
+suhtautuu koko sivuun automaattisesti, jos katsellaan eri kokoisilta näytöiltä
+Kts. https://www.w3schools.com/cssref/pr_dim_width.asp
+
+marginaalin voi määrittää autoksi, jolloin alla olevassa tapauksessa sivu
+keskittyy vaakatasossa ja ylä- ja alamarginaali on 10px
+Kts. https://www.w3schools.com/css/css_margin.asp
+
+overflow-komento määrittelee, mitä tapahtuu, jos sisältö ei mahdu sille
+määrättyyn blockiin, eli käytännössä, tuleeko scrollbars näkyviin. auto
+tarkoittaa sitä, että tulevat tarvittaessa näkyviin
+Kts. https://www.w3schools.com/css/css_overflow.asp*/
+main {
+  display: table;
+  width: 70%;
+  margin: 10px auto;
+  overflow: auto;
+  background: #FFF;
+}
+/* Nämä selitetty ylemmpänä */
+p {
+  margin: 10px 0;
+  line-height: 1.5em;
+}
+/* text-transform: capitalize tarkoittaa sitä, että riippumatta, miten
+teksti on kirjoitettu h1-tägien sisään, tekstin ensimmäinen kirjain
+kirjoitetaan isoilla kirjaimilla, muut selitetty ylempänä
+Kts. https://www.w3schools.com/cssref/pr_text_text-transform.asp */
+h1 {
+  text-transform: capitalize;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+  line-height: 1em;
+}
+
+h2, h3, h4 {
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+strong {
+  font-weight: bold;
+}
+/* clearfix -luokalla määritetään, miten kellutus tapahtuu "oikein", eli
+jos kuva on suurempi kuin tekstilaatikko, ilman tätä se "valuisi" tekstilaatikon
+ulkopuolelle, mutta tällä voidaan määrittää, että se pysyy laatikossa.
+:before ja :after tarkoittavat sitä mitä sanovatkin, eli ennen ja jälkeen
+Kts. https://www.w3schools.com/howto/howto_css_clearfix.asp
+
+content-komennolla voidaan määrittää sisältö
+Kts. https://www.w3schools.com/cssref/pr_gen_content.asp
+
+display: table selitettiin jo ylempänä*/
+
+.clearfix:before, .clearfix:after {
+  content: ' ';
+  display: table;
+}
+
+/* clear: both poistaa kellutuksen molemmista suunnista
+Kts. https://www.w3schools.com/cssref/pr_class_clear.asp */
+
+.clearfix:after {
+  clear: both;
+}
+
+.content-header {
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.content-footer {
+  border-top: 1px solid #DDD;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+/*-------------------
+      HEADER-block
+---------------------*/
+/* Laitetaan kuvan ja otsikoiden väliin sininen 7px viiva */
+
+header {
+  border-bottom: 7px solid #4EA0D9;
+}
+
+/* Määritetään logo block-elementiksi ja keskitetään se */
+
+#logo {
+  display: block;
+  margin: auto;
+}
+
+#titles {
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+}
+
+
+/*-------------------------
+      Varsinaisen sivun
+      columns elementit
+--------------------------*/
+
+/* Kellutetaan id:left-col vasemmalle ja määritetään sen leveys suhteellisena */
+
+#left {
+  float: left;
+  width: 48%;
+}
+
+/* määritetään left-col-id:n sisällä olevan points-luokan li-elementti */
+
+#left ul li {
+  margin-bottom: 30px;
+}
+
+/* määritetään left-col-id:n sisällä olevan points-luokan img-elementti */
+#left ul img {
+  float: left;
+  margin-right: 10px;
+}
+
+/* määritetään left-col-id:n sisällä olevan points-luokan h4-block */
+#left ul h4 {
+  padding-top: 5px;
+}
+
+/* Kellutetaan right-col-id oikealle ja määritetään sen leveys suhteellisena */
+#right {
+  float: right;
+  width: 48%;
+}
+
+/* border-radius määrittää kulmien pyöreyden */
+#contact-form{
+  padding: 30px 20px 20px 20px;
+  border: 4px solid #4EA0D8;
+  border-radius: 10px;
+  overflow: auto;
+  background: #F4F4F4;
+}
+
+#contact-form div {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+}
+
+/* määritetään contact-form-id:n sisällä olevan text- ja email-input tyypit*/
+#contact-form input[type='text'],
+#contact-form input[type='email'] {
+  height: 25px;
+  width: 50%;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+}
+/* määritetään contact-form-id:n sisällä oleva submit-input-tyyppi */
+#contact-form input[type='submit'] {
+  display: block;
+  float: right;
+  padding: 12px 17px;
+  background: #FA6E3E;
+  color: #FFF;
+  border: 0;
+  border-radius: 5px;
+}
+/* määritetään contact-form-id:n sisällä oleva submit-input-tyypin toiminta
+silloin, kun sitä osoittaa hiirellä (hover)
+Kts. https://www.w3schools.com/cssref/sel_hover.asp
+
+Muutetaan osoitin erilaiseksi - cursor: pointer
+Kts. https://www.w3schools.com/cssref/pr_class_cursor.asp */
+
+#contact-form input[type='submit']:hover {
+  background: #D55427;
+  cursor: pointer;
+}
+
+#contact-form .content-footer p {
+  font-style: italic;
+  text-align: center;
+  color: #777;
+  font-size: .8em;
+}
+
+/*--------------------------
+      Testimonial-osio
+--------------------------*/
+
+#testimonials {
+  display: table-row;
+  margin: 40px 0;
+  color: #777;
+}
+
+#testimonials img {
+  float: left;
+  margin-right: 20px;
+}
+
+#testimonials blockquote {
+  padding: 20px 30px;
+  width: 90%;
+}
+
+
+/*-------------------------
+      Footer
+--------------------------*/
+
+#main-footer {
+  border-top: 1px solid #CCC;
+  text-align: center;
+  color: #AAA;
+}
+
+
+/*------------------------
+      Responsiivisuus
+-------------------------*/
+
+/* Näytöt, joiden maksimileveys on 1023px */
+@media (max-width:1023px) {
+  #container {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  #left, #right {
+    width: 100%;
+    clear: both;
+    float: left;
+  }
+
+  #left .points li{
+    width: 80%;
+    margin: 0 auto 30px;
+    padding: 8px;
+    background: #EEE;
+    border-radius: 5px;
+  }
+
+  #left .points img {
+    margin-top: 10px;
+  }
+
+  #testimonials img {
+    display: block;
+    margin: 20px auto;
+    float: none;
+  }
+}
+/* Näytöt, joiden maksimileveys on 799px */
+@media (max-width: 799px) {
+
+  h2 {
+    font-size: 1.7em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+  #left, #right {
+    width: 100%;
+    clear: both;
+    /*float: none;*/
+  }
+  #contact-form {
+    clear: both;
+    padding: 20px 30px 30px 30px;
+  }
+}
+/* Näytöt, joiden maksimileveys on 479px */
+@media (min-width: 479px) {
+  h1 {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+}
