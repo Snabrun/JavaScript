@@ -1,4 +1,8 @@
-h1
+body
+{
+  background-image: url(bg.jpg);
+}
+h1, h3
 {
   font-weight: 1000;
   font-family: 'Courgette', cursive;
@@ -9,4 +13,127 @@ h2
   font-family: 'Great Vibes', cursive;
 
   font-weight: 200;
+}
+h3
+{
+  margin-left: 100px;
+  padding-top: 10px;
+}
+#header-a
+{
+	width:100%;
+	height:136px;
+	margin: 0 auto;
+	position:relative;
+	background-color: transparent;
+	z-index:2;
+	cursor: default !important;
+	}
+  .header-bg
+  {
+	width:100%;
+	position:absolute;
+	background: url(bg_header.jpg) center top repeat-x;
+	left:0;
+	height: 135px;
+	}
+
+  .right_col_header {
+	float: right;
+	text-align:center;
+	color:#FEB238;
+	font:20px/40px Tahoma;
+	border-left:1px solid #000;
+	width:237px;
+	overflow:hidden;
+	}
+
+#logo
+{
+  display: block;
+  margin: left 200px;
+}
+.header_content, .navigation, #middle, .footer_content {
+	width:905px;
+	margin:0 auto
+	}
+.navigation
+{
+	height: 40px;
+	margin: 0 auto;
+	background-color: #292929;
+	border: 1px solid #4D4946;
+	box-shadow: -1px 0 0 #000;
+	width: 903px;
+	position: relative;
+	z-index: 10;
+	display: block;
+}
+.menu
+{
+  	float: left;
+  	height: 40px;
+  	position: relative;
+  	display: block;
+}
+.menu ul
+{
+	padding: 0;
+	margin: 0;
+}
+
+.menu ul li
+ {
+	float: left;
+	font: 14px/40px Tahoma;
+	list-style: none outside none;
+	position: relative;
+	text-align: center;
+	color:#fff;
+	border-right:1px solid #4D4946;
+	border-left:1px solid #000;
+	}
+  .menu ul li:hover
+  {
+  	background-color:#383838;
+  	border-left:1px solid #1F1F1F;
+  	}
+
+.menu ul li a
+{
+  	height:40px;
+  	font: 14px/40px Tahoma;
+  	display:block;
+  	padding: 0 24px 0 23px;
+  	color:#fff;
+  	text-decoration:none;
+  	text-shadow:0 1px 0 rgba(0, 0, 0, 0.8);
+  	}
+    .menu ul li:first-child a {
+    	padding: 0 26px 0 25px;
+    	}
+
+    .menu-important {
+    	border: 2px solid orange !important;
+    }
+
+    .menu-important a {
+    	color: orange !important;
+  }
+.main-page
+{
+  background-image: url(main.jpg);
+  border: 2px solid black;
+  height: auto;
+  margin: auto;
+  width: 1000px;
+}
+p
+{
+  padding: 10px;
+}
+footer > p
+{
+float: left;
+margin: 100px;
 }
