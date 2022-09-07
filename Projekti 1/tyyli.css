@@ -11,8 +11,9 @@ h1, h3
 h2
 {
   font-family: 'Great Vibes', cursive;
-
   font-weight: 200;
+  color: white;
+  margin-top: 0;
 }
 h3
 {
@@ -31,7 +32,7 @@ h3
 	}
   .header-bg
   {
-	width:100%;
+	width:120%;
 	position:absolute;
 	background: url(bg_header.jpg) center top repeat-x;
 	left:0;
@@ -48,9 +49,9 @@ h3
 	overflow:hidden;
 	}
 
-#logo
+.logo
 {
-  display: block;
+  display: inline;
   margin: left 200px;
 }
 .header_content, .navigation, #middle, .footer_content {
@@ -64,7 +65,7 @@ h3
 	background-color: #292929;
 	border: 1px solid #4D4946;
 	box-shadow: -1px 0 0 #000;
-	width: 903px;
+	width: 1000px;
 	position: relative;
 	z-index: 10;
 	display: block;
@@ -85,7 +86,7 @@ h3
 .menu ul li
  {
 	float: left;
-	font: 14px/40px Tahoma;
+	font: 19px/40px Tahoma;
 	list-style: none outside none;
 	position: relative;
 	text-align: center;
@@ -117,10 +118,11 @@ h3
     	border: 2px solid orange !important;
     }
 
-    .menu-important a {
+    .menu-important a
+    {
     	color: orange !important;
   }
-.main-page
+.main-page, footer
 {
   background-image: url(main.jpg);
   border: 2px solid black;
@@ -128,12 +130,49 @@ h3
   margin: auto;
   width: 1000px;
 }
+section
+{
+  float: left;
+  width: 10%;
+}
+#bitcoin
+{
+
+  width: auto;
+  height: 526px;
+  margin-left: -2px;
+  border: 1px solid black
+}
 p
 {
   padding: 10px;
 }
-footer > p
+footer
+{
+  height: 100px;
+}
+.osoite
 {
 float: left;
-margin: 100px;
+margin-right: 20px;
+padding: 5px;
+}
+.aside
+{
+  float: right;
+  width: 14%;
+  background-color: #006997AD;
+  padding: 5px;
+  border-radius: 15px;
+  margin-top: -1190px;
+  margin-right: 150px;
+  border-style: double;
+}
+aside img
+{
+  width: 100%
+}
+.icons
+{
+  width: 15%;
 }
