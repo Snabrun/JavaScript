@@ -1,0 +1,22 @@
+body
+{
+  width: 15%;
+  margin: 20px auto;
+}
+h1
+{
+  background-color: #E9DAC1;
+}
+main
+{
+  background-color: #9ED2C6;
+}
+input[type=text], input[type=password]
+{
+  background-color: #54BAB9;
+  border-radius: 5px;
+}
+main h1
+{
+  text-align: center;
+}

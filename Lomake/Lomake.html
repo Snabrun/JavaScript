@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mallilomake</title>
+    <link rel="stylesheet" href="lomake.css">
+  </head>
+  <body>
+    <main>
+      <h1>Lomake</h1>
+      <form action="Lomake.php" method="post">
+        <table>
+          <tr>
+            <td>Etunimi:</td>
+            <td><input type="text" name="etunimi"/></td>
+          </tr>
+          <tr>
+            <td>Sukunimi:</td>
+            <td><input type="text" name="sukunimi"/></td>
+          </tr>
+          <tr>
+            <td>Käyttäjätunnus:</td>
+            <td><input type="text" name="kayttajatunnus"/></td>
+          </tr>
+          <tr>
+            <td>Salasana:</td>
+            <td><input type="password" name="salasana"/></td>
+          </tr>
+          <tr>
+            <td>Sukupuoli:</td>
+            <td><input type="radio" name="sukupuoli" value="Mies"/>Mies<br/>
+              <input type="radio" name="sukupuoli" value="Nainen">Nainen
+            </td>
+          </tr>
+          <tr>
+            <td>Palaute</td>
+            <td><textarea name="palaute" rows="5" cols="16"></textarea></td>
+          </tr>
+          <tr>
+            <td>Jäsenyystaso</td>
+            <td><select class="" name="jasenyystaso">
+              <option value="">Valitse yksi</option>
+              <option value="admin">Admin</option>
+              <option value="kayttaja">Käyttäjä</option>
+              <option value="testi">Testi</option>
+
+            </select></td>
+          </tr>
+          <tr>
+            <td>Valitse osaamisalueet</td>
+            <td><input type="checkbox" name="osaamisalue" value="PHP"/>PHP<br/>
+            <input type="checkbox" name="osaamisalue" value="HTML"/>HTML<br/>
+            <input type="checkbox" name="osaamisalue" value="CSS"/>CSS
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="Lähetä"></td>
+            <td><input type="reset" value="Tyhjennä"></td>
+          </tr>
+        </table>
+        </form>
+      </main>
+    </body>
+    </html>
