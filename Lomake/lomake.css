@@ -2,7 +2,9 @@ body
 {
   width: 15%;
   margin: 20px auto;
+  background-image: url(table.jpeg);
 }
+
 h1
 {
   background-color: #E9DAC1;
