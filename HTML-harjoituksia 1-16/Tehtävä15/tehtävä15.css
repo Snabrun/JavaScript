@@ -1,0 +1,31 @@
+table {
+            width: 450px;
+            border-collapse: collapse;
+        }
+
+            table thead th, thead td {
+                background-color: #cbc9c9;
+                font-weight: bold;
+                border: 1px solid black;
+            }
+
+            table td {
+                border: 1px solid #999;
+				text-align: right;
+            }
+
+            table tbody tr:nth-child(even) {
+                background-color: #eeeeee;
+            }
+
+            table tbody tr:nth-child(odd) {
+                background-color: #ffffff;
+            }
+
+            table tfoot td {
+                 background-color: #cbc9c9;
+                font-weight: bold;
+            }
+			th{
+				text-align:left;
+			}

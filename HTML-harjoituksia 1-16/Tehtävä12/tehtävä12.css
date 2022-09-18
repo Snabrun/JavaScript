@@ -1,0 +1,11 @@
+table
+{
+  border: 1px solid black;
+  margin: 20px;
+}
+td, th
+{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}

@@ -1,0 +1,70 @@
+h1
+{
+  color: green;
+}
+#a
+{
+font-size: 40px;
+}
+#s
+{
+font-size: 30px;
+}
+#d
+{
+font-size: 20px;
+}
+#f
+{
+font-size: 10px;
+}
+#g
+{
+font-size: 20px;
+}
+#h
+{
+font-size: 30px;
+}
+#j
+{
+font-size: 40px;
+}
+h2
+{
+  font-family: cursive;
+}
+#z
+{
+  font-family: fantasy;
+}
+#q
+{
+  font-family: serif;
+  color: blue;
+}
+#x
+{
+  font-family: inherit;
+}
+#w
+{
+  font-family: "Sofia";
+}
+#c
+{
+  font-family: "Sofia", sans-serif;
+}
+#e
+{
+  font-family: 'Alumni Sans Inline One';font-size: 22px;
+  
+}
+#v
+{
+  font-family: 'Akronim';font-size: 22px;
+}
+#r
+{
+  font-family: font-family: 'Allerta Stencil';font-size: 22px;
+}
