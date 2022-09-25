@@ -1,0 +1,17 @@
+body
+{
+  background-color: gray;
+}
+.article
+{
+  width: 500px;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 10px;
+  float:left;
+}
+#eka
+{
+  background-color: yellow;
+  border: 2px solid black;
+}
