@@ -1,0 +1,28 @@
+.article
+{
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 10px;
+  float:left;
+  background-color: gray;
+}
+#eka
+{
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+#toka
+{
+  background-color: violet;
+  border: 2px solid black;
+}
+
+
+/*#v1
+{
+  border: 2px solid gray;
+  color: gray;
+  background: white;
+}*/
