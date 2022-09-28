@@ -18,8 +18,22 @@
   background-color: violet;
   border: 2px solid black;
 }
+#kolmas
+{
+  background-color: orange;
+  border: 2px solid black;
+}
+#neljas
+{
+  background-color: blue;
+  border: 2px solid black;
+}
 
-
+#viides
+{
+  background-color: green;
+  border: 2px solid black;
+}
 /*#v1
 {
   border: 2px solid gray;

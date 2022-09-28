@@ -24,3 +24,50 @@ function max()
   console.log(Math.max.apply(Math,massive1));
   document.getElementById('v2').innerHTML = "Luvut ovat: " + massive1 + "<br>Suurin luku: " + Math.max.apply(null,massive1);
 }
+
+function pariton()
+{
+  var number = document.getElementById('pariton2').value;
+  if (number%2 == 0)
+  {
+    document.getElementById('v3').innerHTML = "Luku on parillinen";
+  }
+  else
+  {
+  document.getElementById('v3').innerHTML = "Luku on pariton";
+  }
+}
+
+function ika()
+{
+  var ikaraja2 = document.getElementById('ikaraja').value;
+  if (ikaraja2 < 16)
+  {
+  document.getElementById('v4').innerHTML = "Voit ajaa polkupyörää";
+  }
+  else if (ikaraja2 < 18)
+  {
+    document.getElementById('v4').innerHTML = "Voit ajaa mopoa";
+  }
+  else
+  {
+    document.getElementById('v4').innerHTML = "Voit ajaa autoa";
+  }
+}
+
+function kielet()
+{
+  var random = document.getElementById('kie').value;
+  if (random == "ru")
+  {
+    document.getElementById('v5').innerHTML = "Привет мир!";
+  }
+  else if (random == "swe")
+  {
+    document.getElementById('v5').innerHTML = "Hej världen!";
+  }
+  else
+  {
+    document.getElementById('v5').innerHTML = "Hello world!";
+  }
+}

@@ -10,6 +10,7 @@
     <main>
       <article class="article" id="eka">
         <h1>Taulukko 1</h1>
+        <p>Luvut ovat järjestyksessä</p>
         <form class="" action="index.html" method="post">
           <label for="luku1">Anna 1. luku:</label>
           <input type="text" id="luku1" value=""><br />
@@ -22,6 +23,8 @@
       </article>
 
       <article class="article" id="toka">
+                <h1>Taulukko 2</h1>
+                <p>Taulukko etsii suurrin luku</p>
         <form class="" action="index.html" method="post">
           <label for="luk1">Anna 1. luku:</label>
           <input type="text" id="luk1" value=""><br />
@@ -39,7 +42,45 @@
         </form>
 
       </article>
-    </main>
+      <article class="article" id="kolmas">
+                <h1>Taulukko 3</h1>
+                <p>Parillinen tai pariton</p>
+        <form class="" action="index.html" method="post">
+          <label for="pariton2">Anna luku:</label>
+          <input type="pariton2" id="pariton2" value=""><br />
+          <button type="button" name="button" onclick="pariton()">Tarkista</button>
+          <p id="v3"></p>
 
+        </form>
+
+      </article>
+      <article class="article" id="neljas">
+                <h1>Taulukko 4</h1>
+                <p>Ikäraja</p>
+        <form class="" action="index.html" method="post">
+          <label for="ikaraja">Anna luku:</label>
+          <input type="ikaraja" id="ikaraja" value=""><br />
+          <button type="button" name="button" onclick="ika()">Tarkista</button>
+          <p id="v4"></p>
+
+        </form>
+
+      </article>
+      <article class="article" id="viides">
+        <h1>Taulukko 5</h1>
+        <p>Kääntäjä</p>
+        <form class="" action="index.html" method="post">
+          <select class="" name="" id="kie">
+            <option value="eng">Englanti</option>
+            <option value="ru">Venäjä</option>
+            <option value="swe">Ruotsi</option>
+          </select>
+          <button type="button" name="button" onclick="kielet()">Tarkista</button>
+            <p id="v5"></p>
+
+        </form>
+
+      </article>
+    </main>
   </body>
 </html>
