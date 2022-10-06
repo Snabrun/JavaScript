@@ -1,6 +1,6 @@
 body
 {
-  background-color: gray;
+  background-color: #cff6fb;
 }
 .article
 {
@@ -16,6 +16,16 @@ body
   border: 2px solid black;
 }
 #toka
+{
+  background-color: #00ab9d;
+  border: 2px solid black;
+}
+#kolmas
+{
+  background-color: #22ab;
+  border: 2px solid black;
+}
+#neljas
 {
   background-color: #00ab9d;
   border: 2px solid black;
