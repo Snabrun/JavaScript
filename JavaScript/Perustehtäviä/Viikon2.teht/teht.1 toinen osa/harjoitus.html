@@ -11,6 +11,7 @@
     <main>
       <article class="article" id="eka">
         <h1>Tehtävä 1</h1>
+        <p>Onko luku positiivinen vai negatiivinen?</p>
         <form class="" action="index.html" method="post">
           <label for="luku">Anna luku:</label>
           <input type="text" id="luku" value=""><br />
@@ -21,6 +22,7 @@
 
       <article class="article" id="toka">
         <h1>Tehtävä 2</h1>
+        <p>Funktio näyttää viikonpäivän numero</p>
         <form class="" action="index.html" method="post">
           <label for="luku2">Viikonpäivän nro:</label>
           <input type="text" id="number" value=""><br />
@@ -30,16 +32,18 @@
 
           <article class="article" id="kolmas">
             <h1>Tehtävä 3</h1>
+            <p>Onko karkavuosi vai tavallinen?</p>
             <form class="" action="index.html" method="post">
               <label for="luku3">Vuosi:</label>
               <input type="text" id="vuodenN" value=""><br />
-              <button type="button" name="button" onclick="karka()">Test</button>
+              <button type="button" name="button" onclick="karka()">Tarkista</button>
               <p id="v3"></p>
 
             </form>
           </article>
         <article class="article" id="neljas">
           <h1>Tehtävä 4</h1>
+          <p>Funktio näyttää numeroiden summan ja keskiarvon</p>
           <form class="" action="index.html" method="post">
             <label for="luku1">Anna luku 1.:</label>
             <input type="text" id="luku4" name="" value=""><br />
@@ -51,8 +55,19 @@
             <input type="text" id="luku7" name="" value=""><br />
             <label for="luku5">Anna luku 5.:</label>
             <input type="text" id="luku8" name="" value=""><br />
-            <button type="button" name="button" onclick="keskiA()">Test</button>
+            <button type="button" name="button" onclick="keskiA()">Tarkista</button>
             <p id="v4"></p>
+          </form>
+        </article>
+        <article class="article" id="viides">
+          <h1>Tehtävä 5</h1>
+          <p>Kertolasku: x * 1-10</p>
+          <form class="" action="index.html" method="post">
+            <label for="laskin1">Anna x:n arvo:</label>
+            <input type="text" id="laskinx" name="" value=""><br />
+            <button type="button" name="button" onclick="laskin()">Tarkista</button>
+            <p id="v5"></p>
+
 
           </form>
 

@@ -74,3 +74,15 @@ function keskiA()
     document.getElementById("v4").innerHTML = "Anna joku luku!";
   }
 }
+
+function laskin()
+{
+  var x = document.getElementById('laskinx').value;
+  for (var i=1; i < 11; i++)
+  {
+    lasku ="Kertolasku: " + x + "*" + i + "=" + x * i;
+    document.write(lasku + "<br>")
+  }
+
+
+}
