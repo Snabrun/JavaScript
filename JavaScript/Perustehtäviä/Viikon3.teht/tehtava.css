@@ -1,0 +1,66 @@
+.article
+{
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 10px;
+  float:left;
+  background-color: gray;
+}
+#eka
+{
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+#toka
+{
+  background-color: violet;
+  border: 1px solid black;
+}
+#kolmas
+{
+  background-color: orange;
+  border: 1px solid black;
+}
+#neljas
+{
+  background-color: blue;
+  border: 1px solid black;
+}
+
+#viides
+{
+  background-color: #FFAAAA;
+  border: 1px solid black;
+}
+#kuudes
+{
+  background-color: #D4AB6A;
+  border: 1px solid black;
+}
+#seitsemas
+{
+  background-color: #B77AAB;
+  border: 1px solid black;
+}
+#kahdeksas
+{
+  background-color: #4858ED;
+  border: 1px solid black;
+}
+#yhdeksas
+{
+  background-color: #CFED3E;
+  border: 1px solid black;
+}
+#kymmenes
+{
+  background-color: #2CA678;
+  border: 1px solid black;
+}
+#yhdestoista
+{
+  background-color: #6F8DA4;
+  border: 1px solid black;
+}
