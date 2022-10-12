@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="tehtava.css">
+    <script src="tehtava.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <article class="article" id="eka">
+      <h1>Tehtävä1</h1>
+      <p>Tee ohjelma, jolle voi syöttää Scrabble-pelin sanan ja ohjelma laskee kirjain pisteet seuraavasti</p>
+      <div>
+  <ul>
+    <li>A, E, I, N, S, T = 1p</li>
+    <li>O, Ä, K, L = 2p</li>
+    <li>U, M = 3p</li>
+    <li>Y, H, J, P, R, V = 4p</li>
+    <li>Ö, D = 7p</li>
+    <li>B, F, G = 8p</li>
+    <li>C = 10p</li>
+    <li>loput kirjaimet = 12p</li>
+  </ul>
+      </div>
+
+    <form class="" action="index.html" method="post">
+      <label for="luku1">Anna sana, jonka pisteet lasketaan: </label>
+      <input type="text" id="word" value=""><br />
+      <button type="button" name="button" onclick="tehtava1()">Laske kirjainpisteet</button>
+      <p id="v1"></p>
+
+      </form>
+    </article>
+
+  </body>
+</html>
