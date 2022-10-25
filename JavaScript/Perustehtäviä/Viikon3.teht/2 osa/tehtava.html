@@ -7,30 +7,83 @@
     <script src="tehtava.js" charset="utf-8"></script>
   </head>
   <body>
-    <article class="article" id="eka">
-      <h1>Tehtävä1</h1>
-      <p>Tee ohjelma, jolle voi syöttää Scrabble-pelin sanan ja ohjelma laskee kirjain pisteet seuraavasti</p>
-      <div>
-  <ul>
-    <li>A, E, I, N, S, T = 1p</li>
-    <li>O, Ä, K, L = 2p</li>
-    <li>U, M = 3p</li>
-    <li>Y, H, J, P, R, V = 4p</li>
-    <li>Ö, D = 7p</li>
-    <li>B, F, G = 8p</li>
-    <li>C = 10p</li>
-    <li>loput kirjaimet = 12p</li>
-  </ul>
-      </div>
-
+    <article class='vieri' id='yksi'>
+    <h1>Tehtävä 1</h1>
+    <p>Tee ohjelma, jolle voi syöttää Scrabble-pelin sanan ja ohjelma laskee kirjain pisteet seuraavasti</p>
+    <ul>
+      <li>A, E, I, N, S, T = 1p</li>
+      <li>O, Ä, K, L = 2p</li>
+      <li>U, M = 3p</li>
+      <li>Y, H, J, P, R, V = 4p</li>
+      <li>Ö, D = 7p</li>
+      <li>B, F, G = 8p</li>
+      <li>C = 10p</li>
+      <li>loput kirjaimet = 12p</li>
+    </ul>
     <form class="" action="index.html" method="post">
-      <label for="luku1">Anna sana, jonka pisteet lasketaan: </label>
-      <input type="text" id="word" value=""><br />
-      <button type="button" name="button" onclick="tehtava1()">Laske kirjainpisteet</button>
-      <p id="v1"></p>
+      <p>Anna sana, jonka pisteet lasketaan: <input type="text" id="scsana" value=""></p>
+      <button type="button" name="button" onclick="laskePisteet()">Laske kirjainpisteet</button>
+      <div id="tscrabble"></div>
+    </form>
+  </article>
 
-      </form>
-    </article>
-
+    <article class='vieri' id='kaksi'>
+  <h1>Tehtävä 2</h1>
+  <p>Tee ohjelma, joka arpoo lottonumerot (7 kpl)</p>
+  <button type="button" name="button" onclick="arvoLotto()">Arvo numerot</button>
+  <p></p>
+  <div id="ltaulu"></div>
+</article>
+<article class='vieri' id='kaksi'>
+<h1>Tehtävä 3</h1>
+<p>Tee ohjelma, joka muuntaa määritetyn (javascriptissä) 2-uloitteisen taulukon taulukkomuotoon</p>
+<p>Esimerkiksi [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]]</p>
+<table border='1'>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>1</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>11</td>
+    <td>9</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>0</td>
+    <td>7</td>
+    <td>27</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>4</td>
+    <td>24</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>10</td>
+    <td>26</td>
+    <td>7</td>
+  </tr>
+</table>
+<form class="" action="index.html" method="post">
+  <p></p>
+  <button type="button" name="button" onclick="muunnaTaulukoksi()">Muunna taulukoksi</button>
+  <p></p>
+  <div id="ttaulu"></div>
+</form>
+</article>
+<article class='vieri' id='kolme'>
+<article class='vieri' id='kolme'>
+<h1>Tehtävä 4</h1>
+<p>Tee ohjelma, joka tekee taulukon kaikista korttipakan korteista (2 sisäkkäistä silmukkaa) ja sen jälkeen sekoittaa "pakan" ja arpoo 5 korttia sieltä</p>
+<button type="button" name="button" onclick="arvoKortit()">Arvo 5 korttia</button>
+<div id='pakka'></div>
+</article>
+</html>
   </body>
 </html>

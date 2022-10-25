@@ -3,28 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="projekti.js" charset="utf-8"></script>
-    <link rel="projekti.css" href="/css/master.css">
+    <script src="koodi.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="master.css">
   </head>
   <body>
-    <main>
-      <article class="article" id="">
-      <form class="" action="index.html" method="post">
-        <label for=""></label>
-        <button type="button" name="button">1</button>
-        <button type="button" name="button">2</button>
-        <button type="button" name="button">3</button><br />
-        <button type="button" name="button">4</button>
-        <button type="button" name="button">5</button>
-        <button type="button" name="button">6</button><br />
-        <button type="button" name="button">7</button>
-        <button type="button" name="button">8</button>
-        <button type="button" name="button">9</button><br />
-        <button type="button" name="button">10</button>
-
+    <article class="">
+      <h2>Valitse luku alla olevista painikkeista</h2>
+      <p id="tilanne"></p>
+      <form action="" id="lomake">
+        <button type="button" class="nappi" id="1" value="1" onclick="napit(this)">1</button>
+        <button type="button" class="nappi" id="2" value="2" onclick="napit(this)">2</button>
+        <button type="button" class="nappi" id="3" value="3" onclick="napit(this)">3</button>
+        <button type="button" class="nappi" id="4" value="4" onclick="napit(this)">4</button>
+        <button type="button" class="nappi" id="5" value="5" onclick="napit(this)">5</button><br />
+        <button type="button" class="nappi" id="6" value="6" onclick="napit(this)">6</button>
+        <button type="button" class="nappi" id="7" value="7" onclick="napit(this)">7</button>
+        <button type="button" class="nappi" id="8" value="8" onclick="napit(this)">8</button>
+        <button type="button" class="nappi" id="9" value="9" onclick="napit(this)">9</button>
+        <button type="button" class="nappi" id="10" value="10" onclick="napit(this)">10</button>
+        <p id="m1">Arvausten lukumäärä: 0</p>
+        <p id="m2">Arvatut numerot: - </p>
+        <p id="m3"></p>
+        <button type="button" name="button" id="uudestaan" onclick="uusix()">Uusi peli?</button>
       </form>
-        </article>
-    </main>
-
+    </article>
   </body>
 </html>

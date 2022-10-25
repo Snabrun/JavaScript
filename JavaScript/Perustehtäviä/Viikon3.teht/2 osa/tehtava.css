@@ -1,66 +1,53 @@
-.article
+body
 {
-  width: 300px;
+  background-color: beige;
+  padding: 20px;
+}
+table{
+text-align: right;
+border-collapse: collapse;
+}
+td{
+  width: 20px;
+}
+.vieri
+{
+  width: 500px;
   padding: 10px;
   margin: 10px;
   margin-right: 10px;
   float:left;
-  background-color: gray;
 }
-#eka
-{
-  background-color: #00ab9d;
-  border: 1px solid black;
+#yksi{
+  background-color: #FECC84;
 }
-
-#toka
-{
-  background-color: violet;
-  border: 1px solid black;
+#kaksi{
+  background-color: #FFCCCC;
 }
-#kolmas
-{
-  background-color: orange;
-  border: 1px solid black;
+#kolme{
+    background-color: #FFFF99;
 }
-#neljas
-{
-  background-color: blue;
-  border: 1px solid black;
+#nelja{
+    background-color: #B3FFB3;
 }
-
-#viides
-{
-  background-color: #FFAAAA;
-  border: 1px solid black;
+#viisi{
+    background-color: #B3D1FF;
 }
-#kuudes
-{
-  background-color: #D4AB6A;
-  border: 1px solid black;
+#kuusi{
+  background-color: #9DF9EF;
 }
-#seitsemas
-{
-  background-color: #B77AAB;
-  border: 1px solid black;
+#seiska{
+  background-color: #EDF7F6;
 }
-#kahdeksas
-{
-  background-color: #4858ED;
-  border: 1px solid black;
+#kasi{
+  background-color: #FFA8B5;
 }
-#yhdeksas
-{
-  background-color: #CFED3E;
-  border: 1px solid black;
+#ysi{
+  background-color: #d0bdf4;
 }
-#kymmenes
-{
-  background-color: #2CA678;
-  border: 1px solid black;
+#kyba{
+  background-color: #fceed1;
 }
-#yhdestoista
-{
-  background-color: #6F8DA4;
-  border: 1px solid black;
+#ykst{
+  background-color: #39a0ca;
 }

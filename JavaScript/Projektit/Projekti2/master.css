@@ -1,0 +1,51 @@
+main
+{
+  margin: 0 auto;
+  width: 250px;
+  background-color: yellow;
+  padding: 20px;
+}
+article
+{
+  margin: 0 auto;
+  padding: 20px;
+  background-color: pink;
+  width: 270px;
+}
+.nappi
+{
+  width: 50px;
+  height: 50px;
+  margin-top: 3px;
+  font-size: 16px;
+  background-color: blue;
+  color: yellow;
+  border-radius: 15px;
+}
+
+.nappi:disabled,
+.nappi.disabled{
+  color:#fff;
+  border-color: #a0a0a0;
+  background-color: #a0a0a0;
+}
+.nappi:disabled:hover,
+.nappi:disabled:focus,
+.nappi.disabled:hover,
+.nappi.disabled:focus {
+  color:#fff;
+  border-color: #a0a0a0;
+  background-color: #a0a0a0;
+}
+.nappi.oikein{
+  color:yellow;
+  border-color: red;
+  background-color: red;
+}
+.nappi.oikein:disabled:hover,
+.nappi.oikein:disabled:focus
+{
+  color:yellow;
+  border-color: red;
+  background-color: red;
+}
