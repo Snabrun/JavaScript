@@ -59,7 +59,7 @@ function napit(arvo)
     document.getElementById(arvo.value).classList.add("oikein");
     document.getElementById(arvo.value).disabled = true;
     voitot++;
-    for(var k = 1; k <= 10; k++)
+    for(var k = 1; k <= 10; k++ )
     {
       if(k == arvo.value && arvo.value !=10)
       {
