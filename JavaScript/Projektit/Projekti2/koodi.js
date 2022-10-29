@@ -75,7 +75,7 @@ function napit(arvo)
   document.getElementById('tilanne').innerHTML = "voitot: " + voitot + ' / tappiot: ' + tappiot;
 }
 function uusix()
-{
+{ 
   arvaustenLukumaara = 1;
   arvatutNumerot.length = 0;
   arvattava = Math.floor(Math.random()*10) + 1;
