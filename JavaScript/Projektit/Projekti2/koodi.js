@@ -78,7 +78,7 @@ function uusix()
 {
   arvaustenLukumaara = 1;
   arvatutNumerot.length = 0;
-  arvattava = Math.floor(Math.random()*10) + 1;
+  arvattava = Math.floor(Math.random()*10) + 1; 
   for(var m = 1; m <= 10; m++)
   {
     document.getElementById(m).classList.remove("disabled");
