@@ -1,6 +1,6 @@
 body
 {
-  background-color: beige;
+  background-color: white;
   padding: 20px;
 }
 table{
@@ -10,7 +10,7 @@ border-collapse: collapse;
 td{
   width: 20px;
 }
-.vieri
+.article
 {
   width: 500px;
   padding: 10px;
@@ -19,13 +19,13 @@ td{
   float:left;
 }
 #yksi{
-  background-color: #FECC84;
+  background-color: #ffdab9;
 }
 #kaksi{
-  background-color: #FFCCCC;
+  background-color: #bc8f8f;
 }
 #kolme{
-    background-color: #FFFF99;
+    background-color: #778899;
 }
 #nelja{
     background-color: #B3FFB3;
@@ -37,7 +37,7 @@ td{
   background-color: #9DF9EF;
 }
 #seiska{
-  background-color: #EDF7F6;
+  background-color: #f0f8ff ;
 }
 #kasi{
   background-color: #FFA8B5;
