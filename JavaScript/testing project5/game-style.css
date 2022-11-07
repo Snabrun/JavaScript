@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  background-color: blue;
+}
+.memory-game {
+  width: 650px;
+  height: 650px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.memory-card {
+  width: 25%;
+  height: 33,333%;
+  transform: scale(1);
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="game-style.css">
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+     <div class="game-component-1">
+        <span class="link-game"><a href="index.html" id="link-to-game">
+          <img src="./images/home.png" alt="" width="50">Home
+        </a></span>
+        <div class="game-data">
+          <div class="matches block">
+            Matches: <span id="matches-number">0</span>
+          </div>
+          <div class="turns block">
+            Turns: <span id="turns-number">0</span>
+          </div>
+        </div>
+        <span class="link-github">
+          <a href="#">
+            <img src="./images/github.png" alt="" width="50">Github
+          </a>
+        </span>
+      </div>
+      <div class="component-2">
+        <div class="game-wrapper">
+          <div class="game-btn">
+            <button type="button" name="button" id="start-button" onclick="start()">START</button>
+            <div class="clock">
+              <img src="./images/clock.png" alt="" width="40">
+              <span id="timerid">0:00</span>
+            </div>
+          </div>
+          <section class="memory-game">
+  <div class="memory-card">
+    <img class="front-face" src="images/cards/react.png" alt="React">
+    <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+  </div>
+
+  <div class="memory-card">
+    <img class="front-face" src="img/react.svg" alt="React">
+    <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+  </div>
+
+  <div class="memory-card">
+    <img class="front-face" src="img/angular.svg" alt="Angular">
+    <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+  </div>
+
+  <div class="memory-card">
+    <img class="front-face" src="img/angular.svg" alt="Angular">
+    <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+  </div>
+
+  <div class="memory-card">
+    <img class="front-face" src="img/ember.svg" alt="Ember">
+    <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+  </div>
+
+  <div class="memory-card">
+    <img class="front-face" src="img/ember.svg" alt="Ember">
+    <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+  </div>
+
+  <div class="memory-card">
+    <img class="front-face" src="img/vue.svg" alt="Vue">
+    <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+  </div>
+
+  <div class="memory-card">
+    <img class="front-face" src="img/vue.svg" alt="Vue">
+    <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+  </div>
+
+  <div class="memory-card">
+    <img class="front-face" src="img/backbone.svg" alt="Backbone">
+    <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+  </div>
+
+  <div class="memory-card">
+    <img class="front-face" src="img/backbone.svg" alt="Backbone">
+    <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+  </div>
+
+  <div class="memory-card">
+    <img class="front-face" src="img/aurelia.svg" alt="Aurelia">
+    <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+  </div>
+
+  <div class="memory-card">
+    <img class="front-face" src="img/aurelia.svg" alt="Aurelia">
+    <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+  </div>
+</section>
+
+        </div>
+      </div>
+      </div>
+  </body>
+</html>
