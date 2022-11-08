@@ -26,15 +26,18 @@
 {
   height: 174px;
   width: 170px;
-transform: scale(1);
-position: relative;
-transition: transform 0.5s;
-transform-style: preserve-3d;
-margin: 5px;
+  cursor: pointer;
+  /*transform: scale(1);*/
+  user-select: none;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  margin: 5px;
 }
 
-.memory-card.flip
-{
+.flip {
   transform: rotateY(180deg);
 }
 
