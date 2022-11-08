@@ -5,14 +5,14 @@
   box-sizing: border-box;
 }
 
-.main
+.wrapper
 {
   height: 100vh;
   display: flex;
   background-color: white;
 }
 
-.muistipeli
+.memory-game
 {
   width: 750px;
   height: 550px;
@@ -22,7 +22,7 @@
   perspective: 1000px;
 }
 
-.muistipeli-kortti
+.memory-card
 {
   height: 174px;
   width: 170px;
@@ -32,20 +32,22 @@ transition: transform 0.5s;
 transform-style: preserve-3d;
 margin: 5px;
 }
-.muistipeli-kortti.flip
+
+.memory-card.flip
 {
   transform: rotateY(180deg);
 }
+.memory-card:active
+{
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
 
 img
 {
   height: 170px;
   width: 170px;
-}
-.muistipeli-kortti:active
-{
-  transform: scale(0.97);
-  transition: transform 0.2s;
 }
 
 .front-face, .back-face
