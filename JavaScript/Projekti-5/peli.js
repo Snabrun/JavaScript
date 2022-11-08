@@ -3,10 +3,11 @@ const cards = document.querySelectorAll(".memory-card");
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
-const flipCard = event => {
-  const target = event.target.parentElement;
+const flipCard = e => {
 
-  taget.classList.add("flip");
+  const target = e.target.parentElement;
+
+  target.classList.add("flip");
 /*
   if (!hasFlippedCard) {
     hasFlippedCard = false;

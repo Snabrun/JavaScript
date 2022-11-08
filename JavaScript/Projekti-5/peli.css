@@ -37,19 +37,20 @@ margin: 5px;
 {
   transform: rotateY(180deg);
 }
+
 .memory-card:active
 {
   transform: scale(0.97);
   transition: transform 0.2s;
 }
 
-
+/*
 img
 {
   height: 170px;
   width: 170px;
 }
-
+*/
 .front-face, .back-face
 {
   width: 100%;
