@@ -80,8 +80,11 @@ const cards = document.querySelectorAll(".memory-card");
    }
 
  }
-var secondCard
+
+
+var firstCard
 var click = 1
+var voitto = 0
 cards.forEach((card) => {
   // Adding listener to all card classes
   card.addEventListener('click', () => {
@@ -94,20 +97,64 @@ cards.forEach((card) => {
 
         if (secondCard.getAttribute("data-name") === card.getAttribute("data-name")) {
           console.log("same");
+          voitto += 1;
+          click = 1;
+
         }
         else if (secondCard.getAttribute("data-name") !== card.getAttribute("data-name")){
+          //Disable(card, secondCard)
           card.classList.remove('flip')
           secondCard.classList.remove('flip')
-          console.log("qfsdgs");
+          console.log(secondCard);
+          click = 1;
         }
-        click = 1
-        Disable(card, secondCard)
+
       }
+
       secondCard = card;
-      click += 1
-
-
-
+      click += 1;
+      console.log(click);
     }
   })
 });
+
+
+
+/*
+var firstClick
+var secondClick
+var muchClick = 0
+
+cards.forEach((card) => {
+  card.addEventListener('click', () => {
+    if (!card.getAttribute("disabled")) {
+      card.classList[1] === 'flip' ? card.classList.remove('flip') : card.classList.add('flip')
+      muchClick += 1;
+      firstClick = firstClick.getAttribute("data-name");
+      console.log(firstClick);
+
+      if (firstClick.getAttribute("data-name") === secondCard.getAttribute("data-name")) {
+        console.log("same");
+        voitto += 1;
+        click = 0;
+
+      }
+      else if (firstClick.getAttribute("data-name") !== secondClick.getAttribute("data-name") {
+
+      }
+
+    }
+
+
+
+
+
+
+
+
+
+  })
+
+});
+
+*/
