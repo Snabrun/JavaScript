@@ -6,7 +6,7 @@ const container = document.getElementsByClassName("memory-game")[0];
  * game types
  * @type {number[]} actually is 4x4, 4x6, 6x6
  */
-const game_types = [8, 12, 32];
+const game_types = [9, 12, 32];
 /**
  * Shuffling cards
  */
@@ -82,6 +82,70 @@ const cards = document.querySelectorAll(".memory-card");
  }
 
 
+
+
+
+let hasFlippedCard = false;
+let firstCard, secondCard;
+let boardLocked = false;
+
+ cards.forEach((card) => {
+   // Adding listener to all card classes
+   card.addEventListener('click', () => {
+     // If true, then we remove the class, either we add class
+   //  card.classList[1] === 'flip' ? card.classList.remove('flip') : card.classList.add('flip');
+   if (boardLocked) return;
+   if (card === firstCard) return;
+
+   card.classList.add('flip');
+
+   if (!hasFlippedCard) {
+     //first click
+
+     hasFlippedCard = true;
+     firstCard = card;
+     console.log(card, "firstCard");
+   }
+   else {
+     //second card
+
+     hasFlippedCard = false;
+     secondCard = card;
+     console.log(card, "secondCard");
+
+     checkForMatch()
+   }
+ });
+});
+
+const checkForMatch = () => {
+  if (firstCard.getAttribute("data-name") === secondCard.getAttribute("data-name")) {
+    console.log("gg same cards");
+    firstCard.removeEventListener('click', cards);
+    secondCard.removeEventListener('click', cards);
+
+  }
+  else {
+    boardLocked = true;
+    console.log("you are loh");
+    setTimeout (() => {
+    firstCard.classList.remove('flip')
+    secondCard.classList.remove('flip')
+    boardLocked = false;
+    }, 1000);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*
 var firstCard
 var click = 1
 var voitto = 0
@@ -117,7 +181,7 @@ cards.forEach((card) => {
     }
   })
 });
-
+*/
 
 
 /*
