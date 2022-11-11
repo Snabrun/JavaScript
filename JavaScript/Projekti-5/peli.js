@@ -6,7 +6,7 @@ const container = document.getElementsByClassName("memory-game")[0];
  * game types
  * @type {number[]} actually is 4x4, 4x6, 6x6
  */
-const game_types = [9, 12, 32];
+const game_types = [8, 12, 32];
 /**
  * Shuffling cards
  */
@@ -37,10 +37,8 @@ function InitializeCards(number) {
 
   for (let card = 0; card < type; card++) {
     // shuffle cards before the loop is going to end
-    card === type - 1 && shuffle();
 
     for (let i = 0; i < 2; i++) {
-      if (card > 0) {
         const element = container.appendChild(document.createElement('div'));
 
         const imageFront = element.appendChild(document.createElement('img'));
@@ -57,8 +55,9 @@ function InitializeCards(number) {
         imageBack.src = "./kuvat/question.png";
         imageBack.className = 'back-face';
       }
-    }
   }
+
+  shuffle();
 }
 
 

@@ -22,7 +22,6 @@
   display: flex;
   flex-flow: row wrap;
   perspective: 1000px;
-  /*background-color: white;*/
 }
 
 .memory-card
