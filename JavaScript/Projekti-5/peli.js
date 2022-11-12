@@ -82,12 +82,77 @@ const cards = document.querySelectorAll(".memory-card");
 
  //START GAME
 var gameStarted
+var timerStarted
+let switchStart = false
+
 function start() {
+  if (switchStart === false) {
   gameStarted = true;
+  timerStarted = true;
   console.log("gameStarted");
   document.getElementById('startID').innerHTML = "RESET";
+  switchStart = true;
+  }
+  //RESET GAME
+  else {
+    sanovka();
+    resetTimer();
+    document.getElementById('startID').innerHTML = "START";
+    switchStart = false;
+    gameStarted = false;
+
+
+// FLIP REMOVE AFTER 0,5s AND shuffle after 1s
+    setTimeout (() => {
+      cards.forEach((card) => {
+        card.classList.remove('flip');
+      });
+  }, 500);
+
+  setTimeout (() => {
+
+    shuffle();
+  }, 1000);
+
+  }
+}
+
+
+//TIMER
+
+var timer = 0;
+var timerInterval;
+var second = document.getElementById('second');
+var minute = document.getElementById('minute');
+
+function vpered() {
+  sanovka();
+  timerInterval = setInterval(function() {
+  timer += 1/60;
+  msVal = Math.floor((timer - Math.floor(timer))*100);
+  secondVal = Math.floor(timer) - Math.floor(timer/60) * 60;
+  minuteVal = Math.floor(timer/60);
+  //ms.innerHTML = msVal < 10 ? "0" + msVal.toString() : msVal;
+  second.innerHTML = secondVal < 10 ? "0" + secondVal.toString() : secondVal;
+  minute.innerHTML = minuteVal < 10 ? "0" + minuteVal.toString() : minuteVal;
+  }, 1000/60);
+}
+
+function sanovka() {
+  clearInterval(timerInterval);
+}
+
+function resetTimer() {
+  timer = 0;
+  second.innerHTML = "00";
+  minute.innerHTML = "00";
 
 }
+
+
+
+
+
 
 
 

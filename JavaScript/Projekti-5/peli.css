@@ -14,6 +14,17 @@
   background-image: url(https://cdn.discordapp.com/attachments/1003712694072918127/1040729778849857586/egorek_Purple_wooden_shelf_with_black_background_realistic_ligh_e22e6aaa-46d4-4697-9eec-02abafaa358e.png);
 
 }
+.timer
+{
+  position: absolute;
+  margin-left: 70vh;
+  margin-top: -50vh;
+  z-index:  100;
+  border: 3px solid white;
+  border-radius: 17px;
+  color: white;
+}
+
 .buttons
 {
   position: absolute;
