@@ -35,23 +35,26 @@
 {
   position: absolute;
   z-index:  100;
+  text-align: center;
 }
 
 .statisticSection
 {
   margin-left: 19vh;
   margin-top: 40vh;
-  width: 150px;
+  width: 170px;
   height: 150px;
   border: 3px solid #8A458A;
   border-radius: 30px;
   box-shadow: 10px 10px 40px rgb(0 0 0 / 400%);
+  padding-top: 20px;
 }
 .statisticSection > p
 {
   font-family: 'Saira', sans-serif;
   color:#0E0E0E;
   font-size: 20px;
+  padding: 10px;
 
 }
 
@@ -71,6 +74,7 @@
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
 .surprise
 {
   margin-left: 89vh;

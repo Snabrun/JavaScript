@@ -80,42 +80,6 @@ const cards = document.querySelectorAll(".memory-card");
 
  }
 
- //START GAME
-var gameStarted
-var timerStarted
-let switchStart = false
-
-function start() {
-  if (switchStart === false) {
-  gameStarted = true;
-  timerStarted = true;
-  console.log("gameStarted");
-  document.getElementById('startID').innerHTML = "RESET";
-  switchStart = true;
-  }
-  //RESET GAME
-  else {
-    sanovka();
-    resetTimer();
-    document.getElementById('startID').innerHTML = "START";
-    switchStart = false;
-    gameStarted = false;
-
-
-// FLIP REMOVE AFTER 0,5s AND shuffle after 1s
-    setTimeout (() => {
-      cards.forEach((card) => {
-        card.classList.remove('flip');
-      });
-  }, 500);
-
-  setTimeout (() => {
-
-    shuffle();
-  }, 1000);
-
-  }
-}
 
 
 //TIMER
@@ -206,7 +170,7 @@ const checkForMatch = () => {
     if (wins == 8) theEnd(clicker);
 
   }
- 
+
   else {
     boardLocked = true;
     console.log("you are loh");
@@ -219,26 +183,76 @@ const checkForMatch = () => {
 };
 
 
+//START GAME
+var gameStarted
+var timerStarted
+let switchStart = false
+
+function start() {
+  if (switchStart === false) {
+    gameStarted = true;
+    timerStarted = true;
+    console.log("gameStarted");
+    document.getElementById('startID').innerHTML = "RESET";
+    switchStart = true;
+  }
+  //RESET GAME
+  else {
+    sanovka();
+    resetTimer();
+    document.getElementById('startID').innerHTML = "START";
+    switchStart = false;
+    gameStarted = false;
+    wins = 0;
+    clicker = 0;
+    document.getElementById('howMuchTrue').innerHTML = "0";
+    document.getElementById('howMuchClick').innerHTML = "0";
+    console.log(wins);
+
+
+    // FLIP REMOVE AFTER 0,5s AND shuffle after 1s
+    setTimeout (() => {
+      cards.forEach((card) => {
+        card.classList.remove('flip');
+      });
+    }, 500);
+
+    setTimeout (() => {
+
+      shuffle();
+    }, 1000);
+
+  }
+}
+
 
 function theEnd() {
   var newClass = document.getElementById('me');
-  newClass.classList.remove("wtf");
-  newClass.classList.add("NotHidden");
   document.querySelector('.memory-game').style.filter = 'blur(2px)';
   document.getElementById('GG').innerHTML ="<b>" + "Käytit " + clicker + " napsautusta voittaaksesi!" + "</b>";
   console.log(clicker);
-  if (wins == 8) {
   var newClass = document.getElementById('me');
   newClass.classList.remove("wtf");
   newClass.classList.add("NotHidden");
   console.log('you won!');
+  sanovka();
+  console.log(secondVal);
+  document.getElementById('muchTimeM').innerHTML = minuteVal;
+  document.getElementById('muchTimeS').innerHTML = secondVal;
+
     //hujnya.getElementsByClassName('wtf');
 
 
-  }
+
 };
-
-
+//play again button
+var oldClass = document.getElementById('me');
+function hiddenButton(newClass) {
+  oldClass.classList.remove("NotHidden");
+  oldClass.classList.add("wtf");
+  document.querySelector('.memory-game').style.filter = 'blur(0px)';
+console.log(oldClass);
+}
 
 
 
