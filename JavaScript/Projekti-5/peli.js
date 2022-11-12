@@ -252,6 +252,8 @@ function hiddenButton(newClass) {
   oldClass.classList.add("wtf");
   document.querySelector('.memory-game').style.filter = 'blur(0px)';
 console.log(oldClass);
+minuteVal = 0;
+secondVal = 0;
 }
 
 

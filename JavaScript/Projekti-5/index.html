@@ -16,11 +16,10 @@
   </head>
   <body>
     <div class="wrapper">
-      <button type="button" name="button" onclick="theEnd()">123123123231132</button>
+  <!--     <button type="button" name="button" onclick="theEnd()">123123123231132</button> -->
       <div class="buttons">
         <section class="buttonHTML">
-          <button id="startID" type="button" name="button" onclick="vpered(), start()">START</button>
-
+          <button class="button-64" role="button" onclick="vpered(), start()"><span class="text" id="startID">START</span></button>
         </section>
 
       </div>
@@ -34,7 +33,7 @@
         </section>
         <section class="timer">
           <div class="time">
-            <span id="minute">00</span>
+          <p><span id="minute">00</span>:</p>
             <span id="second">00</span>
           </div>
         </section>
@@ -45,9 +44,11 @@
 
         <h1>Sinä voitit!</h1>
         <p id="GG"></p>
-        <p id="muchTimeM"></p>
-        <p id="muchTimeS"></p>
-        <button type="button" name="button" onclick="start(), hiddenButton()">Pelaa uudestan</button>
+        <p>Minuttia: <span id="muchTimeM"></span></p>
+        <p>Sekuntia: <span id="muchTimeS"></span></p>
+
+<!--    <button type="button" name="button" onclick="start(), hiddenButton()">Pelaa uudestan</button>-->
+        <button class="button-72" role="button" onclick="start(), hiddenButton()">Pelaa uudestan</button>
 
       </section>
       </div>
