@@ -80,7 +80,14 @@ const cards = document.querySelectorAll(".memory-card");
 
  }
 
+ //START GAME
+var gameStarted
+function start() {
+  gameStarted = true;
+  console.log("gameStarted");
+  document.getElementById('startID').innerHTML = "RESET";
 
+}
 
 
 
@@ -94,6 +101,7 @@ let clicker = 0
    card.addEventListener('click', () => {
      // If true, then we remove the class, either we add class
    //  card.classList[1] === 'flip' ? card.classList.remove('flip') : card.classList.add('flip');
+   if (!gameStarted) return;
    if (boardLocked) return;
    if (card === firstCard) return;
    clicker += 1;
