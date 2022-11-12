@@ -206,7 +206,7 @@ const checkForMatch = () => {
     if (wins == 8) theEnd(clicker);
 
   }
-
+ 
   else {
     boardLocked = true;
     console.log("you are loh");
