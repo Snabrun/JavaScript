@@ -87,6 +87,7 @@ const cards = document.querySelectorAll(".memory-card");
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let boardLocked = false;
+let clicker = 0
 
  cards.forEach((card) => {
    // Adding listener to all card classes
@@ -95,6 +96,9 @@ let boardLocked = false;
    //  card.classList[1] === 'flip' ? card.classList.remove('flip') : card.classList.add('flip');
    if (boardLocked) return;
    if (card === firstCard) return;
+   clicker += 1;
+   console.log(clicker);
+   document.getElementById('howMuchClick').innerHTML = clicker;
 
    card.classList.add('flip');
 
@@ -117,13 +121,19 @@ let boardLocked = false;
  });
 });
 
+var wins = 0;
 const checkForMatch = () => {
   if (firstCard.getAttribute("data-name") === secondCard.getAttribute("data-name")) {
     console.log("gg same cards");
     firstCard.removeEventListener('click', cards);
     secondCard.removeEventListener('click', cards);
+    wins += 1
+    console.log(wins);
+    document.getElementById('howMuchTrue').innerHTML = wins;
+    if (wins == 8) theEnd(clicker);
 
   }
+
   else {
     boardLocked = true;
     console.log("you are loh");
@@ -133,8 +143,27 @@ const checkForMatch = () => {
     boardLocked = false;
     }, 1000);
   }
-}
+};
 
+
+
+function theEnd() {
+  var newClass = document.getElementById('me');
+  newClass.classList.remove("wtf");
+  newClass.classList.add("NotHidden");
+  document.querySelector('.memory-game').style.filter = 'blur(2px)';
+  document.getElementById('GG').innerHTML ="<b>" + "Käytit " + clicker + " napsautusta voittaaksesi!" + "</b>";
+  console.log(clicker);
+  if (wins == 8) {
+  var newClass = document.getElementById('me');
+  newClass.classList.remove("wtf");
+  newClass.classList.add("NotHidden");
+  console.log('you won!');
+    //hujnya.getElementsByClassName('wtf');
+
+
+  }
+};
 
 
 

@@ -6,6 +6,7 @@
 }
 
 .wrapper
+
 {
   height: 100vh;
   display: flex;
@@ -13,6 +14,77 @@
   background-image: url(https://cdn.discordapp.com/attachments/1003712694072918127/1040729778849857586/egorek_Purple_wooden_shelf_with_black_background_realistic_ligh_e22e6aaa-46d4-4697-9eec-02abafaa358e.png);
 
 }
+
+.statistic
+{
+  position: absolute;
+  z-index:  100;
+}
+
+.statisticSection
+{
+  margin-left: 19vh;
+  margin-top: 40vh;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #8A458A;
+  border-radius: 30px;
+  box-shadow: 10px 10px 40px rgb(0 0 0 / 400%);
+}
+.statisticSection > p
+{
+  font-family: 'Saira', sans-serif;
+  color:#0E0E0E;
+  font-size: 20px;
+
+}
+
+.wtf
+{
+  position: absolute;
+  z-index:  100;
+  visibility: hidden;
+}
+.NotHidden
+{
+  position: absolute;
+  z-index:  100;
+  animation: 1s show ease;
+}
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.surprise
+{
+  margin-left: 89vh;
+  margin-top: 40vh;
+  width: 250px;
+  height: 250px;
+/*  border-radius: 17px;*/
+/*  background-color: white;*/
+  background-image: url(kuvat/bg-win.png);
+  text-align: center;
+  padding: 30px 20px;
+  border: 3px solid #8A458A;
+  border-radius: 30px;
+  box-shadow: 10px 10px 40px rgb(0 0 0 / 400%);
+}
+h1
+{
+  font-family: 'Saira', sans-serif;
+  color:#DFD3DF!important;
+  text-shadow: 1px 0 1px #000,
+  0 1px 1px #000,
+  -1px 0 1px #000,
+  0 -1px 1px #000;
+}
+.surprise > p
+{
+  font-family: 'Saira', sans-serif;
+  color:#0E0E0E;
+}
+
 
 .memory-game
 {
@@ -22,8 +94,8 @@
   display: flex;
   flex-flow: row wrap;
   perspective: 1000px;
-}
 
+}
 .memory-card
 {
   height: 174px;
