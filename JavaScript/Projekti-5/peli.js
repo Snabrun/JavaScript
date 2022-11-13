@@ -178,7 +178,7 @@ const checkForMatch = () => {
     firstCard.classList.remove('flip')
     secondCard.classList.remove('flip')
     boardLocked = false;
-    }, 1000);
+  }, 800);
   }
 };
 
