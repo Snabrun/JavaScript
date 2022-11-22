@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
@@ -16,85 +16,39 @@
   </head>
   <body>
     <div class="wrapper">
-  <!--     <button type="button" name="button" onclick="theEnd()">Test endGame button</button> -->
-  <div class="buttonsSection">
-
-
-      <!--<div class="statistic"> -->
-        <div class="statisticSection">
-          <p>You clicked: <span id="howMuchClick"></span></p>
-          <p>Turns: <span id="howMuchTrue"></span></p>
-
+  <!--     <button type="button" name="button" onclick="theEnd()">123123123231132</button> -->
+        <div class="statistic">
+            <section class="timer">
+              <div class="time">
+              <p><span id="minute">00</span>:</p>
+                <span id="second">00</span>
+              </div>
+            </section>
+            <section class="statisticSection">
+              <p>You clicked: <span id="howMuchClick"></span></p>
+              <p>Turns: <span id="howMuchTrue"></span></p>
+            </section>
+            <div class="action-buttons">
+                <button class="button-64" role="button" onclick="vpered(), start()"><span class="text" id="startID">START</span></button>
+                <button class="button-64" role="button" onclick="window.location='paasivu.html'"><span class="text">CHANGE</span></button>
+            </div>
         </div>
-        <div class="timer">
-          <img src="kuvat/clock.png" alt="kello" width="23%" id="kello">
-          <div class="time">
-          <p><span id="minute">00</span>:</p>
-            <span id="second">00</span>
-          </div>
-        </div>
-        <!--  <div class="buttons">-->
-        <div class="buttonHTML">
-          <button class="button-64" role="button" onclick="vpered(), start()"><span class="text" id="startID">START</span></button>
-        </div>
-
-        <!--  </div> -->
-    <!--  </div> -->
-    </div>
-
       <div id="me" class="wtf">
         <section class="surprise">
-	@@ -46,7 +50,7 @@ <h1>Sinä voitit!</h1>
+
+        <h1>Sinä voitit!</h1>
+        <p id="GG"></p>
         <p>Minuttia: <span id="muchTimeM"></span></p>
         <p>Sekuntia: <span id="muchTimeS"></span></p>
 
-
+<!--    <button type="button" name="button" onclick="start(), hiddenButton()">Pelaa uudestan</button>-->
         <button class="button-72" role="button" onclick="start(), hiddenButton()">Pelaa uudestaan</button>
 
       </section>
       </div>
-      <section class="memory-game" style="">
-<!--        <div class="memory-card" data-framework="q">-->
-<!--          <img src="kuvat/1.jpg" alt="123" class="front-face">-->
-<!--          <img src="kuvat/question.png" alt="123" class="back-face">-->
-<!--        </div>-->
-<!--        <div class="memory-card" data-framework="q">-->
-<!--          <img src="kuvat/1.jpg" alt="" class="front-face">-->
-<!--          <img src="kuvat/question.png" alt="" class="back-face">-->
-<!--        </div>-->
-<!--        <div class="memory-card" data-framework="w">-->
-<!--          <img src="kuvat/2.jpg" alt="" class="front-face">-->
-<!--          <img src="kuvat/question.png" alt="" class="back-face">-->
-<!--        </div>-->
-<!--        <div class="memory-card" data-framework="w">-->
-<!--          <img src="kuvat/2.png" alt="" class="front-face">-->
-<!--          <img src="kuvat/question.png" alt="" class="back-face">-->
-<!--        </div>-->
-<!--        <div class="memory-card" data-framework="e">-->
-<!--          <img src="kuvat/3.webp" alt="" class="front-face">-->
-<!--          <img src="kuvat/question.png" alt="" class="back-face">-->
-<!--        </div>-->
-<!--        <div class="memory-card" data-framework="e">-->
-<!--          <img src="kuvat/3.webp" alt="" class="front-face">-->
-<!--          <img src="kuvat/question.png" alt="" class="back-face">-->
-<!--        </div>-->
-<!--        <div class="memory-card" data-framework="r">-->
-<!--          <img src="kuvat/4.jpg" alt="" class="front-face">-->
-<!--          <img src="kuvat/question.png" alt="" class="back-face">-->
-<!--        </div>-->
-<!--        <div class="memory-card" data-framework="r">-->
-<!--          <img src="kuvat/4.jpg" alt="" class="front-face">-->
-<!--          <img src="kuvat/question.png" alt="" class="back-face">-->
-<!--        </div>-->
-<!--        <div class="memory-card" data-framework="t">-->
-<!--          <img src="kuvat/5.png" alt="" class="front-face">-->
-<!--          <img src="kuvat/question.png" alt="" class="back-face">-->
-<!--        </div>-->
-<!--        <div class="memory-card" data-framework="t">-->
-<!--          <img src="kuvat/5.png" alt="" class="front-face">-->
-<!--          <img src="kuvat/question.png" alt="" class="back-face">-->
-<!--        </div>-->
-      </section>
+        <div class="cardsContainer">
+            <section class="memory-game" />
+        </div>
     </div>
   </body>
 </html>

@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="peli.css">
   </head>
   <body>
+      <script>
+      function saveSettings(type) {
+          document.cookie = `game_type=${type}`;
+          document.getElementsByClassName("button-9")[0].disabled = false;
+      }
+      </script>
     <div class="psivu">
       <div class="pelinRules">
         <div class="rules">
@@ -13,31 +19,23 @@
           <p>aehiojeraoihgjaeroihjaeriohjahoiajeriohjaerihejaheoijhaeiojrihjeraiohjeraohjaeroihjeiroajhoearjhaeiorjhioe</p>
         </div>
       </div>
-
-
-
       <div class="pelinSettings">
         <div class="settings">
           <h1>Settings</h1>
           <div class="settingsText">
           <p>Valitse pelin vaikeusaste</p>
           <div>
-            <input type="radio" id="diffChoice1" name="diff" value="4x4" />
+            <input onclick="saveSettings(8)" type="radio" id="diffChoice1" name="diff" value="4x4"/>
             <label for="diffChoice1">4x4</label></br>
-            <input type="radio" id="diffChoice2" name="diff" value="4x5" />
+            <input  onclick="saveSettings(12)" type="radio" id="diffChoice2" name="diff" value="4x5" />
             <label for="diffChoice2">4x5</label></br>
-            <input type="radio" id="diffChoice3" name="diff" value="6x6" />
+            <input  onclick="saveSettings(18)"type="radio" id="diffChoice3" name="diff" value="6x6" />
             <label for="diffChoice3">6x6</label>
           </div>
         </div>
-        <button class="button-9" role="button">PLAY</button>
+        <button class="button-9" role="button" onclick="window.location='pelisivu.html'" disabled>PLAY</button>
         </div>
       </div>
-
-
-
-
     </div>
-
   </body>
 </html>

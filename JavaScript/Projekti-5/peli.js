@@ -1,3 +1,14 @@
+const get_cookie = document.cookie.split('=')[1];
+
+window.addEventListener('load', () => {
+    if (!get_cookie) {
+        return window.location='paasivu.html';
+    }
+    else {
+        document.getElementsByClassName("cardsContainer")[0].setAttribute("data-game_size",  get_cookie);
+    }
+});
+
 // main container
 const container = document.getElementsByClassName("memory-game")[0];
 // card div attributes
@@ -33,7 +44,7 @@ function shuffle() {
  * @param number is the array index
  */
 function InitializeCards(number) {
-  let type = game_types[number];
+  let type = number
 
   for (let card = 0; card < type; card++) {
     // shuffle cards before the loop is going to end
@@ -66,7 +77,7 @@ function InitializeCards(number) {
 /*
  * Initializing cards and then we wait the click.
  */
-InitializeCards(0);
+InitializeCards(get_cookie);
 
 // All div cards
 const cards = document.querySelectorAll(".memory-card");
