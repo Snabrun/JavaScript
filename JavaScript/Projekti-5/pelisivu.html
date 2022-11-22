@@ -16,42 +16,43 @@
   </head>
   <body>
     <div class="wrapper">
-  <!--     <button type="button" name="button" onclick="theEnd()">123123123231132</button> -->
-      <div class="buttons">
-        <section class="buttonHTML">
-          <button class="button-64" role="button" onclick="vpered(), start()"><span class="text" id="startID">START</span></button>
-        </section>
+  <!--     <button type="button" name="button" onclick="theEnd()">Test endGame button</button> -->
+  <div class="buttonsSection">
 
-      </div>
 
-      <div class="statistic">
-        <section class="statisticSection">
+      <!--<div class="statistic"> -->
+        <div class="statisticSection">
           <p>You clicked: <span id="howMuchClick"></span></p>
           <p>Turns: <span id="howMuchTrue"></span></p>
 
-        </section>
-        <section class="timer">
+        </div>
+        <div class="timer">
+          <img src="kuvat/clock.png" alt="kello" width="23%" id="kello">
           <div class="time">
           <p><span id="minute">00</span>:</p>
             <span id="second">00</span>
           </div>
-        </section>
-      </div>
+        </div>
+        <!--  <div class="buttons">-->
+        <div class="buttonHTML">
+          <button class="button-64" role="button" onclick="vpered(), start()"><span class="text" id="startID">START</span></button>
+        </div>
+
+        <!--  </div> -->
+    <!--  </div> -->
+    </div>
 
       <div id="me" class="wtf">
         <section class="surprise">
-
-        <h1>Sinä voitit!</h1>
-        <p id="GG"></p>
+	@@ -46,7 +50,7 @@ <h1>Sinä voitit!</h1>
         <p>Minuttia: <span id="muchTimeM"></span></p>
         <p>Sekuntia: <span id="muchTimeS"></span></p>
 
-<!--    <button type="button" name="button" onclick="start(), hiddenButton()">Pelaa uudestan</button>-->
+
         <button class="button-72" role="button" onclick="start(), hiddenButton()">Pelaa uudestaan</button>
 
       </section>
       </div>
-
       <section class="memory-game" style="">
 <!--        <div class="memory-card" data-framework="q">-->
 <!--          <img src="kuvat/1.jpg" alt="123" class="front-face">-->
@@ -93,10 +94,7 @@
 <!--          <img src="kuvat/5.png" alt="" class="front-face">-->
 <!--          <img src="kuvat/question.png" alt="" class="back-face">-->
 <!--        </div>-->
-
       </section>
-
     </div>
-
   </body>
 </html>
