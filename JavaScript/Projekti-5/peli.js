@@ -6,7 +6,7 @@ const container = document.getElementsByClassName("memory-game")[0];
  * game types
  * @type {number[]} actually is 4x4, 4x6, 6x6
  */
-const game_types = [8, 12, 32];
+const game_types = [8, 12, 18];
 /**
  * Shuffling cards
  */

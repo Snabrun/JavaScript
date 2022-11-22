@@ -4,12 +4,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+.psivu
+{
+  height: 100vh;
+  display: flex;
+  background-image: url(kuvat/shelves.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pelinRules
+{
+  margin-top: 20vh;
+  margin-left: 31vh;
+  width: 52vh;
+  word-wrap: break-word;
+
+}
+.rules, .settings
+{
+  background-image: url(kuvat/listRules.png);
+    background-size: cover;
+  border: 3px solid white;
+  border-radius: 17px;
+  box-shadow: 0 0 20px rgba(0,0,0,1.5);
+  padding: 18px;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 21pt;
+
+}
+
+.pelinSettings
+{
+  margin-top: 40vh;
+  margin-left: 38vh;
+  width: 52vh;
+  word-wrap: break-word;
+}
+
+.settingsText
+{
+  display: flex;
+  gap: 30px;
+  width: 20vh;
+}
 
 .wrapper
 
 {
   height: 100vh;
   display: flex;
+  background-size: contain;
 /*  background-color: purple;*/
   background-image: url(https://cdn.discordapp.com/attachments/1003712694072918127/1040729778849857586/egorek_Purple_wooden_shelf_with_black_background_realistic_ligh_e22e6aaa-46d4-4697-9eec-02abafaa358e.png);
 
@@ -254,4 +299,42 @@ img
     font-size: 24px;
     min-width: 196px;
   }
+}
+
+
+.button-9 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #530E53;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
 }
