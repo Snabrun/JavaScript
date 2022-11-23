@@ -6,6 +6,7 @@ window.addEventListener('load', () => {
     }
     else {
         document.getElementsByClassName("cardsContainer")[0].setAttribute("data-game_size",  get_cookie);
+
     }
 });
 
@@ -178,7 +179,8 @@ const checkForMatch = () => {
     wins += 1
     console.log(wins);
     document.getElementById('howMuchTrue').innerHTML = wins;
-    if (wins == 8) theEnd(clicker);
+    console.log(document.getElementsByClassName("cardsContainer")[0].getAttribute("data-game_size",  get_cookie));
+    if (wins == document.getElementsByClassName("cardsContainer")[0].getAttribute("data-game_size",  get_cookie)) theEnd(clicker);
 
   }
 

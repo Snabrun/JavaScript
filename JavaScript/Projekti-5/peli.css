@@ -59,6 +59,16 @@
   background-image: url(https://cdn.discordapp.com/attachments/1003712694072918127/1040729778849857586/egorek_Purple_wooden_shelf_with_black_background_realistic_ligh_e22e6aaa-46d4-4697-9eec-02abafaa358e.png);
 
 }
+.time
+{
+  font-family: 'Saira', sans-serif;
+}
+#clock
+{
+  float: left;
+  margin-top: 10px;
+  margin-left: 50px;
+}
 .timer
 {
   width: 250px;
@@ -67,6 +77,7 @@
   height: 70px;
   color:#FFFFFF;
   background: rgba(52, 0, 52, 0.9);
+  text-align: center;
 }
 
 .buttons
@@ -95,7 +106,16 @@
     gap: 5rem;
     text-align: center;
 }
+.kKuvat
+{
+  position: absolute;
 
+}
+.kuvat > img
+{
+  border: 3px solid black;
+  height: 8vh;
+}
 .statisticSection
 {
 /*  width: 170px;*/
