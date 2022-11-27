@@ -32,7 +32,51 @@
   text-shadow: 1px 1px 1px #000;
   font-size: 21pt;
   font-family: 'Saira', sans-serif;
+}
+.info
+{
+  position: absolute;
+  display: flex;
+}
+.info-bar > p
+{
+  padding: 8px;
+  font-family: 'Saira', sans-serif;
+  color:#FFFFFF;
+  text-shadow: 1px 1px 1px #000;
 
+}
+.info-bar
+{
+  background-image: url(kuvat/info.png);
+  width: 20vh;
+  height: 19vh;
+  margin-left: -36.5vh;
+  margin-top: 8vh;
+  border-radius: 17px;
+  background-size: cover;
+   border: 10px solid rgba(0,0,0,0.3);
+
+    -moz-background-clip: border;
+    -webkit-background-clip: border;
+    background-clip: border-box;
+
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+
+    -moz-background-clip: content;
+    -webkit-background-clip: content;
+    background-clip: content-box;
+}
+.strelka
+{
+  margin-top: 12vh;
+  margin-left: 90vh;
+}
+.strelka > img
+{
+  width: 17vh;
 }
 
 .pelinSettings
@@ -109,12 +153,40 @@
 .kKuvat
 {
   position: absolute;
-
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 110vh;
+  margin-top: 6vh;
+  width: 80vh;
 }
 .kuvat > img
 {
   border: 3px solid black;
   height: 8vh;
+}
+.logotip
+{
+  position: absolute;
+  display: flex;
+}
+.logo > img
+{
+  background: white;
+  border-radius: 17px;
+   border: 10px solid rgba(0,0,0,0.3);
+
+    -moz-background-clip: border;
+    -webkit-background-clip: border;
+    background-clip: border-box;
+
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+
+    -moz-background-clip: content;
+    -webkit-background-clip: content;
+    background-clip: content-box;
+  height: 18vh;
 }
 .statisticSection
 {
