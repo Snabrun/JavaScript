@@ -36,7 +36,7 @@
 .info
 {
   position: absolute;
-  display: flex; 
+  display: flex;
 }
 .info-bar > p
 {
@@ -161,6 +161,7 @@
 }
 .kuvat > img
 {
+  box-shadow: 15px 15px 25px rgba(0,0,0,2.5);
   border: 3px solid black;
   height: 8vh;
 }
