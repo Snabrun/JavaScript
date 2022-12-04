@@ -18,22 +18,27 @@ function formValue(form) {
     alert("Anna sukunimesi, jossa on vähintään kolme kirjainta");
     return false;
   }
+  //tarkistetaan osoitteesi
   if (address.length < 3) {
     alert("Anna osoitteesi, jossa on vähintään kolme kirjainta");
     return false;
   }
+  //tarkistetaan indeksisi
   if (formIndex.length < 5) {
     alert("Anna indeksisi, jossa on vähintään viisi lukua");
     return false;
   }
+  //tarkistetaan kaupunkisi
   if (city.length < 3) {
     alert("Anna kaupunkisi, jossa on vähintään kolme kirjainta");
     return false;
   }
+  //tarkistetaan puhelimesi
   if (phone.length < 6) {
     alert("Anna puhelimesi, jossa on vähintään kuusi lukua");
     return false;
   }
+  //lähetetään tietoja paikalliseen tallennustilaan
 
 
   else {
