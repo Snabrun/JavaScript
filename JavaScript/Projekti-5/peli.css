@@ -95,13 +95,12 @@
 }
 
 .wrapper {
-  height: 100vh;
-  display: flex;
-  gap: 5rem;
-  background-size: contain;
-/*  background-color: purple;*/
-  background-image: url(https://cdn.discordapp.com/attachments/1003712694072918127/1040729778849857586/egorek_Purple_wooden_shelf_with_black_background_realistic_ligh_e22e6aaa-46d4-4697-9eec-02abafaa358e.png);
-
+    height: 100vh;
+    display: flex;
+    gap: 5rem;
+    background-size: contain;
+    /*  background-color: purple;*/
+    background-image: url(https://sun9-54.userapi.com/impg/5YQG2hcWxhZtpuQAnImQVXHC68BmnoAGuEv3vg/RBo_bLKMEfw.jpg?size=2048x1024&quality=95&sign=7707811b42fd65f51f5bd69abe96ec8c&type=album);
 }
 .time
 {
